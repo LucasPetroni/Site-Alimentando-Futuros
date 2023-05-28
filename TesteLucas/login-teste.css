@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+/* @import url("./breakpooint-test.css"); */
+
+* {
+  box-sizing: border-box;
+  font-size: 5vmin;
+  font-family: Dosis, Helvetica, Arial, sans-serif;
+}
+body {
+  background-image: url("./Premium\ Photo\ _\ Growing\ plant\ on\ soil\ against\ white\ background.jpeg");
+  background-size: 100% 110%;
+  /* background-size: cover; */
+}
+.h2 {
+  margin: 2vh 0 3vh 7vh;
+  font-size: larger;
+  font-family: "Caveat Brush", cursive;
+  color: green;
+}
+
+.body {
+  color: rgb(0, 0, 0);
+  min-height: 80vh;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+}
+.w100 {
+  width: 100%;
+}
+.wrapper {
+  margin: 2vmin 10vmin 0 10vmin;
+  display: flex;
+  place-content: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: -0.5em 1em 2em rgba(0, 0, 0, 0.5);
+  height: 90%;
+  border-radius: 1em;
+  width: 650px;
+}
+
+.container > input {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+
+.content {
+  background: linear-gradient(
+    45deg,
+    rgb(180, 240, 180),
+    rgb(140, 220, 140),
+    rgb(100, 200, 100)
+  );
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 15vmin;
+  align-items: center;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+.field > input,
+form > button {
+  border: none;
+  background: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+}
+.field > input {
+  width: 100%;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  text-indent: 1.5em;
+}
+.field.small {
+  margin: 1em 15% 0.5em 15%;
+  font-size: 0.5em;
+}
+.field.small a {
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+button {
+  position: relative;
+  cursor: pointer;
+  margin-top: 0.5em;
+  padding: 5px;
+}
+
+button > .icon {
+  width: 0%;
+  left: 100%;
+  transition: all 0.5s;
+}
+
+button:hover > .icon {
+  width: 1em;
+}
+
+.icon,
+.icon-eye {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  position: absolute;
+  bottom: 0.2em;
+  left: 0;
+}
+.icon-eye {
+  cursor: pointer;
+  left: 100%;
+}
+
+.svg-icons {
+  display: none;
+}
+
+input:required + .icon {
+  transition: all 1s;
+}
+input:required:invalid {
+  box-shadow: none;
+  outline: none;
+}
+input:required:invalid:focus + .icon {
+  fill: red;
+  box-shadow: inset 0 0 1em 1em rgba(0, 0, 0, 0.7);
+  border-radius: 0.25em;
+}
+input:required:valid + .icon {
+  fill: greenyellow;
+  border-radius: 3px;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+input:focus::-webkit-input-placeholder {
+  transform: translateY(-10px);
+  font-size: 0.5em;
+}
+
+input:focus::-moz-placeholder {
+  font-size: 0.5em;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  height: 2em;
+  z-index: 1;
+  text-align: center;
+}
+
+#tab1 ~ #contentOne {
+  clip-path: polygon(
+    50% 0,
+    50% 0,
+    50% 2em,
+    100% 2em,
+    100% 2em,
+    0 2em,
+    0 2em,
+    50% 2em
+  );
+  transition: all 0.351s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+
+#tab1:checked ~ #contentOne {
+  clip-path: polygon(
+    0 0,
+    50% 0,
+    50% 2em,
+    100% 2em,
+    100% 100%,
+    0 100%,
+    0 2em,
+    0 2em
+  );
+}
+
+#tab2 ~ #contentTwo {
+  clip-path: polygon(
+    50% 0,
+    50% 0,
+    50% 2em,
+    100% 2em,
+    100% 2em,
+    0 2em,
+    0 2em,
+    50% 2em
+  );
+  transition: all 0.351s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  background: linear-gradient(
+    -135deg,
+    rgb(180, 240, 180),
+    rgb(140, 220, 140),
+    rgb(100, 200, 100)
+  );
+}
+
+#tab2:checked ~ #contentTwo {
+  clip-path: polygon(
+    50% 0,
+    100% 0,
+    100% 2em,
+    100% 2em,
+    100% 100%,
+    0 100%,
+    0 2em,
+    50% 2em
+  );
+}
+
+#tab1 ~ .tabs .t1,
+#tab1 ~ .tabs .t2 {
+  color: #000000;
+  height: 2em;
+  padding-top: 0.5em;
+  font-variant: small-caps;
+  cursor: pointer;
+}
+
+#tab1:checked ~ .tabs .t1,
+#tab2:checked ~ .tabs .t2 {
+  font-weight: bold;
+}
+
+.pop {
+  display: none;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.pop:target {
+  display: flex;
+}
+
+.pop:target .dialog {
+  animation: scaleIn 0.25s;
+}
+
+.dialog a,
+.dialog h2 {
+  color: rgb(0, 0, 0);
+  background: steelblue;
+  font-weight: bold;
+  text-decoration: none;
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding: 0.5em;
+  line-height: 0.5;
+}
+.dialog h2 {
+  left: 0;
+  margin: 0;
+}
+
+.dialog > form,
+.dialog > div {
+  padding-top: 1.5em;
+  font-size: 0.75em;
+}
+.dialog button,
+.dialog input {
+  color: steelblue;
+}
+.dialog input {
+  border-bottom: 1px solid steelblue;
+}
+
+@keyframes scaleIn {
+  0% {
+    clip-path: polygon(
+      50% 50%,
+      50% 50%,
+      50% 50%,
+      50% 50%,
+      50% 50%,
+      50% 50%,
+      50% 50%,
+      50% 50%,
+      50% 50%,
+      50% 50%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      50% 0%,
+      98% 2%,
+      100% 35%,
+      100% 70%,
+      97% 98%,
+      50% 100%,
+      3% 98%,
+      0% 70%,
+      0% 35%,
+      2% 1%
+    );
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    background-size: 130% 110%;
+  }
+}
+
+@media (max-width: 530px) {
+  body {
+    background-size: 160% 110%;
+  }
+}
+
+@media (max-width: 385px) {
+  body {
+    background-size: 200% 120%;
+  }
+}

@@ -1,0 +1,17 @@
+@media (max-width: 750px) {
+  body {
+    background-size: 130% 110%;
+  }
+}
+
+@media (max-width: 530px) {
+  body {
+    background-size: 160% 110%;
+  }
+}
+
+@media (max-width: 385px) {
+  body {
+    background-size: 200% 120%;
+  }
+}
