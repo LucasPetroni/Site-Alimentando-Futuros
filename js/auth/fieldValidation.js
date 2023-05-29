@@ -10,7 +10,7 @@ inputEmail.addEventListener("keyup", ()=>{
         inputEmail.setAttribute("style", "outline-color:#0f0");
         lblEmail.setAttribute("style", "color:#0f0")
     }
-})
+});
 
 const inputPassword = document.querySelector("#idPassword");
 
@@ -24,4 +24,32 @@ inputPassword.addEventListener("keyup", ()=>{
         inputPassword.setAttribute("style", "outline-color:#0f0");
         lblPass.setAttribute("style", "color:#0f0")
     }
-})
+});
+
+const eyePass = document.querySelector(".fa");
+
+eyePass.addEventListener("click", () =>{
+    
+    if(inputPassword.getAttribute("type") == "password"){
+        inputPassword.setAttribute("type", "text");
+        eyePass.setAttribute("class", "fa fa-eye-slash")
+    }else{
+        inputPassword.setAttribute("type", "password");
+        eyePass.setAttribute("class", "fa fa-eye")
+    }
+}); 
+
+fetch("/db.json").then((response) =>{
+        response.json().then((data) =>{
+            data.users.map(user)
+        })
+});
+
+
+localStorage.setItem("users-list", JSON.stringify(users));
+
+let userLog = {
+    emailUserLog : inputEmail.value,
+    passwordUserLog : inputPassword.value,
+}
+
