@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/auth/fieldValidation.js" defer></script>
+</head>
+<body>
+    <div>
+        <form action="index.html" method="GET" onsubmit="return false">
+            <fieldset>
+                <legend>Entrar</legend>
+                    <div>
+                        <label for="idEmail">Email</label>
+                        <input type="text" name="txtEmail" id="idEmail" placeholder="E-mail">
+                    </div>
+                    <div>
+                        <label for="idPassword">Senha</label>
+                        <input type="password" name="txtPassword" id="idPassword" placeholder="Senha">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <button id="btnSubmit" type="submit">Entrar</button>
+                    </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
