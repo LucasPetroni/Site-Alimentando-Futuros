@@ -1,5 +1,6 @@
 const inputEmail = document.querySelector("#idEmail");
 
+
 inputEmail.addEventListener("keyup", () => {
   const lblEmail = document.querySelector("label[for='idEmail']");
 
@@ -39,33 +40,34 @@ inputPassword.addEventListener("keyup", () => {
 //     }
 // });
 
-let userList = [
+userList = [
   {
-    name: "Caio Boris",
-    email: "caio@email.com.br",
-    pass: "alimentandoFuturo",
+    "name": "Caio Boris",
+    "email": "caio@email.com.br",
+    "pass": "alimentandoFuturo"
   },
   {
-    name: "Lucas Petroni",
-    email: "lucas@email.com.br",
-    pass: "alimentandoFuturo",
+    "name": "Lucas Petroni",
+    "email": "lucas@email.com.br",
+    "pass": "alimentandoFuturo"
   },
   {
-    name: "Nathaly Kailane",
-    email: "nathaly@email.com.br",
-    pass: "alimentandoFuturo",
+    "name": "Nathaly Kailane",
+    "email": "nathaly@email.com.br",
+    "pass": "alimentandoFuturo"
   },
   {
-    name: "Kauan Oriene",
-    email: "kauan@email.com.br",
-    pass: "alimentandoFuturo",
+    "name": "Kauan Oriene",
+    "email": "kauan@email.com.br",
+    "pass": "alimentandoFuturo"
   },
   {
-    name: "Matheus Delgado",
-    email: "matheus@email.com.br",
-    pass: "alimentandoFuturo",
-  },
+    "name": "Matheus Delgado",
+    "email": "matheus@email.com.br",
+    "pass": "alimentandoFuturo"
+  }
 ];
+
 
 const submitButton = document.querySelector("#btnSubmit");
 
@@ -99,9 +101,6 @@ submitButton.addEventListener("click", () => {
 
     console.log(msg);
     if (msg == "VALIDADO") {
-      msgStatus.setAttribute("style", "color: #00ff00");
-      msgStatus.innerHTML = `<span><strong>Usuário: ${userAuthenticated.name} Login efetuado com sucesso!</strong></span>`;
-
       localStorage.setItem(
         "user-authenticated",
         JSON.stringify(userAuthenticated)
