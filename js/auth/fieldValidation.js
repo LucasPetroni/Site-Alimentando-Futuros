@@ -39,17 +39,93 @@ eyePass.addEventListener("click", () =>{
     }
 }); 
 
-fetch("/db.json").then((response) =>{
-        response.json().then((data) =>{
-            data.users.map(user)
-        })
+let userList = [
+    {
+        "name": "Caio Boris",
+        "email": "caio@email.com.br",
+        "pass": "alimentandoFuturo"
+    },
+    {
+        "name": "Lucas Petroni",
+        "email": "lucas@email.com.br",
+        "pass": "alimentandoFuturo"
+    },
+    {
+        "name": "Nathaly Kailane",
+        "email": "nathaly@email.com.br",
+        "pass": "alimentandoFuturo"
+    },
+    {
+        "name": "Kauan Oriene",
+        "email": "kauan@email.com.br",
+        "pass": "alimentandoFuturo"
+    },
+    {
+        "name": "Matheus Delgado",
+        "email": "matheus@email.com.br",
+        "pass": "alimentandoFuturo"
+    }
+];
+
+const submitButton = document.querySelector("#btnSubmit");
+
+submitButton.addEventListener("click", ()=>{
+    
+    let userLogged = {
+        emailLogged : inputEmail.value,
+        passLogged : inputPassword.value
+    };
+    
+    let userAuthenticated = {}
+    
+    
+    try{
+        if(inputEmail.value.length < 10)
+            throw "O EMAIL DEVE CONTER MAIS DE 10 CARACTERES";
+        if(inputPassword.value.length < 8)
+            throw "A SENHA DEVE CONTER MAIS DE 8 CARACTERES";
+        
+        userList.forEach((user) => {
+            if(user.email == userLogged.emailLogged && user.pass == userLogged.passLogged){
+                userAuthenticated = user;
+                throw "VALIDADO"
+            }
+        });
+
+        throw "SENHA OU EMAIL INVALIDO";
+
+    }catch(msg){
+
+        const msgStatus = document.querySelector("#msgStatus");
+
+        console.log(msg);
+        if(msg == "VALIDADO"){
+            msgStatus.setAttribute("style", "color: #00ff00");
+            msgStatus.innerHTML = `<span><strong>Usuário: ${userAuthenticated.name} Login efetuado com sucesso!</strong></span>`;
+
+            localStorage.setItem("user-authenticated", JSON.stringify(userAuthenticated));
+
+            const token = Math.random().toString(16).substring(2)+Math.random().toString(16).substring(2);  
+
+            localStorage.setItem("token", token);
+
+            setTimeout(() =>{
+                window.location.href = "../pages/home.html";
+            }, 3000);
+        }else{
+            msgStatus.setAttribute("style", "color: #ff0000");
+            msgStatus.innerHTML = "<span><strong>Email ou senha inválidos!</strong></span>";
+
+            inputEmail.value = "";
+            inputPassword.value = "";
+        }
+    }
 });
 
 
-localStorage.setItem("users-list", JSON.stringify(users));
 
-let userLog = {
-    emailUserLog : inputEmail.value,
-    passwordUserLog : inputPassword.value,
-}
+
+
+
+
 
