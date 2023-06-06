@@ -143,3 +143,13 @@
   fill: transparent;
 
 }
+
+@media screen and (max-width: 768px) {
+
+    .card-container {
+  
+      width: 80%;
+  
+    }
+  
+  }
