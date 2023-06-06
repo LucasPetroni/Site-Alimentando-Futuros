@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis");
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
-/* @import url("./breakpooint-test.css"); */
+@import url("./breakpooint-test.css");
 
 * {
   box-sizing: border-box;
@@ -8,8 +8,8 @@
   font-family: Dosis, Helvetica, Arial, sans-serif;
 }
 body {
-  background-image: url("./Premium\ Photo\ _\ Growing\ plant\ on\ soil\ against\ white\ background.jpeg");
-  background-size: 100% 110%;
+  /* background-image: url("./Premium\ Photo\ _\ Growing\ plant\ on\ soil\ against\ white\ background.jpeg");
+  background-size: 100% 110%; */
   /* background-size: cover; */
 }
 .h2 {
@@ -335,7 +335,7 @@ input:focus::-moz-placeholder {
   }
 }
 
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
   body {
     background-size: 130% 110%;
   }
@@ -351,4 +351,4 @@ input:focus::-moz-placeholder {
   body {
     background-size: 200% 120%;
   }
-}
+} */
