@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis");
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
-@import url("./breakpooint-test.css");
+@import url("./breakpoint.css");
 
 * {
   box-sizing: border-box;
-  font-size: 5vmin;
+  font-size: 4vmin;
   font-family: Dosis, Helvetica, Arial, sans-serif;
 }
 #nome {
