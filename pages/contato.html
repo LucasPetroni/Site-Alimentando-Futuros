@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/contato.css" />
+    <script src="../js/contato.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-nome">
+          <img
+            id="img-header"
+            src="../img/logoMaosSemFundo.png"
+            alt="Logo Alimentando Futuros Minuatura"
+          />
+          <h2 id="nome">Alimentando <span class="verde">Futuros</span></h2>
+        </div>
+        <ul>
+          <li><a href="../index.html">Página Inicial</a></li>
+          <li><a href="./integrantes.html">Integrantes</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1>Formulário de Contato</h1>
+      <form class="formulario" id="formulario">
+        <label for="nome1">Qual é o seu nome completo?</label>
+        <input type="text" id="nome1" name="nome1" required />
+
+        <label for="email">Qual é o seu endereço de e-mail?</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="telefone">Qual é o seu número de telefone?</label>
+        <input type="tel" id="telefone" name="telefone" required />
+
+        <label for="localizacao"
+          >Em qual região ou cidade você está localizado?</label
+        >
+        <input type="text" id="localizacao" name="localizacao" required />
+
+        <label for="assistencia"
+          >Você precisa de assistência para plantar ou cuidar de um
+          jardim?</label
+        >
+        <div class="radio-group">
+          <input
+            type="radio"
+            id="assistencia-sim"
+            name="assistencia"
+            value="sim"
+            required
+          />
+          <label for="assistencia-sim">Sim</label>
+          <input
+            type="radio"
+            id="assistencia-nao"
+            name="assistencia"
+            value="nao"
+            required
+          />
+          <label for="assistencia-nao">Não</label>
+        </div>
+
+        <label for="conhecimento"
+          >Você tem algum conhecimento prévio sobre jardinagem?</label
+        >
+        <div class="radio-group">
+          <input
+            type="radio"
+            id="conhecimento-sim"
+            name="conhecimento"
+            value="sim"
+            required
+          />
+          <label for="conhecimento-sim">Sim</label>
+          <input
+            type="radio"
+            id="conhecimento-nao"
+            name="conhecimento"
+            value="nao"
+            required
+          />
+          <label for="conhecimento-nao">Não</label>
+        </div>
+
+        <label for="ajuda"
+          >Você está interessado em receber ajuda de voluntários ou em se
+          voluntariar para ajudar outras pessoas em seus projetos de
+          plantio?</label
+        >
+        <input type="text" id="ajuda" name="ajuda" required />
+
+        <label for="espaco"
+          >Você tem um espaço disponível para o plantio (jardim, varanda,
+          terraço, etc.)?</label
+        >
+        <input type="text" id="espaco" name="espaco" required />
+
+        <label for="restricao"
+          >Você possui algum tipo de restrição de espaço ou recursos para o
+          plantio?</label
+        >
+        <input type="text" id="restricao" name="restricao" required />
+
+        <label for="projeto"
+          >Em que tipo de projeto de jardinagem você está interessado?</label
+        >
+        <input type="text" id="projeto" name="projeto" required />
+
+        <button type="submit" id="enviar" class="botao-apagado" disabled>
+          Enviar
+        </button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
