@@ -1,1 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
 
+header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 1px;
+  border-bottom: solid 1px rgb(131, 128, 128);
+}
+
+.logo-nome {
+  display: flex;
+  height: 12vh;
+  margin: 0 0 0 8%;
+  align-items: center;
+}
+
+#nome {
+  margin-left: 2vh;
+  font-size: 4vh;
+  font-family: "Caveat Brush", cursive;
+}
+
+.verde {
+  color: green;
+  font-family: "Caveat Brush", cursive;
+}
+
+#img-header {
+  width: auto;
+  height: 70%;
+  /* margin: 0 0 0 15vh; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 9vh 0 0;
+}
+
+nav ul {
+  color: #000000;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 24px;
+}
