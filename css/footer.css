@@ -1,19 +1,12 @@
-footer {
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 
-    background-color: #1EA672;
-  
-    color: #ffffff;
-  
-    padding: 20px;
-  
-    text-align: center;
-  
-    position: fixed;
-  
-    bottom: 0;
-  
-    left: 0;
-  
-    width: 100%;
-  
-  }
+footer {
+  background-color: #1ea672;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
