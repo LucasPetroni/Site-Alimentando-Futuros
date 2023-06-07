@@ -8,7 +8,6 @@
   body {
     background-size: 160% 110%;
   }
-
   .content{
     height: 1600px;
     border: solid 2px red;
@@ -42,4 +41,8 @@
     margin:0;
   }
   
+  .container{
+    height: 2200px;
+  }
+
 }
