@@ -87,9 +87,12 @@ h1 {
   background-color: #4caf50;
 }
 
-@media (max-width: 600px) {
+/* Media Queries */
+
+@media (max-width: 992px) {
   .main-container {
     padding: 10px;
+    padding-bottom: 50px;
   }
 
   h1 {
@@ -108,11 +111,25 @@ h1 {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .formulario input[type="text"],
   .formulario input[type="email"],
   .formulario input[type="tel"] {
     width: 100%;
     padding: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .formulario input[type="text"],
+  .formulario input[type="email"],
+  .formulario input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .main-container {
+    padding: 10px;
+    padding-bottom: 70px;
   }
 }

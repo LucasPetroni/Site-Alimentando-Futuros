@@ -230,3 +230,10 @@ button:hover .icon-5 {
 .fil-leaf-5 {
   fill: #3c4819;
 }
+
+@media (max-width: 768px) {
+  button {
+    margin-top: 30vh;
+    margin-left: 0vh;
+  }
+}

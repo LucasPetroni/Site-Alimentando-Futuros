@@ -39,3 +39,35 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+@media (max-width: 992px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 45%;
+    margin-bottom: 5%;
+  }
+  .container {
+    margin-bottom: 80vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+  .container {
+    margin-bottom: 150vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 70%;
+  }
+  .container {
+    margin-bottom: 150vh;
+  }
+}

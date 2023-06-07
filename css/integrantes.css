@@ -56,3 +56,19 @@ body {
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 500px) {
+  .member {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .member img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .member {
+    padding-bottom: 50px;
+  }
+}
+

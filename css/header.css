@@ -34,12 +34,12 @@ header {
 #img-header {
   width: auto;
   height: 70%;
-  /* margin: 0 0 0 15vh; */
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+
   align-items: center;
   margin: 0 9vh 0 0;
 }
@@ -54,4 +54,40 @@ nav ul {
 
 nav ul li {
   margin-right: 24px;
+}
+
+/* Responsivo para telas menores que 768px */
+@media only screen and (max-width: 768px) {
+  .logo-nome {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5%;
+  }
+
+  #nome {
+    margin-top: 2vh;
+    margin-left: 0;
+    font-size: 3vh;
+  }
+
+  #img-header {
+    height: 50%;
+    margin: 0 0 0 5%;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 2vh;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin: 10px 15px;
+  }
 }
