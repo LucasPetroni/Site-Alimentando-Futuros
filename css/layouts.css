@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    text-decoration: none;
 }
 header{
     display: flex;
@@ -30,7 +31,7 @@ header img{
     display: flex;
     flex-direction: row;
     justify-content:space-around;    
-    height: 900px;
+    height: 1200px;
 }
 .card{
     width: 25%;
