@@ -8,10 +8,38 @@
   body {
     background-size: 160% 110%;
   }
+
+  .content{
+    height: 1600px;
+    border: solid 2px red;
+  }
+
+  header nav{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  header nav ul{
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .button{
+    margin-top: 2px;
+    border: solid 2px red;
+  }
+
 }
 
 @media (max-width: 385px) {
   body {
     background-size: 200% 120%;
   }
+
+
+  .logo-nome{
+    margin:0;
+  }
+  
 }
