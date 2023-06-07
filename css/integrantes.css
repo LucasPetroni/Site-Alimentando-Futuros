@@ -12,7 +12,6 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 2% 0 5% 0;
-  /* padding-bottom: ; */
 }
 
 .member {
@@ -71,4 +70,3 @@ body {
     padding-bottom: 50px;
   }
 }
-
