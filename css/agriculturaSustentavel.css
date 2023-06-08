@@ -36,3 +36,40 @@ body {
   font-size: clamp(1em, 1em + 1vw, 1.25em);
   font-weight: 500;
 }
+
+@media (max-width: 992px) {
+  .container h1 {
+    font-size: clamp(1.5em, 1em + 2vw, 2em);
+  }
+
+  .container section {
+    font-size: clamp(0.9em, 1em + 0.8vw, 1.1em);
+  }
+
+  .container {
+    margin: 15vh 0 40vh 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: clamp(1.25em, 1em + 1.5vw, 1.75em);
+  }
+
+  .container section {
+    font-size: clamp(0.8em, 1em + 0.6vw, 1em);
+  }
+  .container {
+    margin: 15vh 0 45vh 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .container h1 {
+    font-size: clamp(1em, 1em + 1vw, 1.5em);
+  }
+
+  .container section {
+    font-size: clamp(0.7em, 1em + 0.4vw, 0.9em);
+  }
+}
