@@ -4,8 +4,8 @@ Nosso projeto busca integrar produtores agropecuários da cidade de são paulo, 
 
 Integrantes:
 
-Caio Boris
-Lucas Petroni
-Kauan Oriene
-Nathaly Oliveira
+Caio Boris<br>
+Lucas Petroni<br>
+Kauan Oriene<br>
+Nathaly Oliveira<br>
 Matheus Delgado

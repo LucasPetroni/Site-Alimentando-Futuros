@@ -27,19 +27,6 @@ inputPassword.addEventListener("keyup", () => {
   }
 });
 
-// const eyePass = document.querySelector(".fa");
-
-// eyePass.addEventListener("click", () =>{
-
-//     if(inputPassword.getAttribute("type") == "password"){
-//         inputPassword.setAttribute("type", "text");
-//         eyePass.setAttribute("class", "fa fa-eye-slash")
-//     }else{
-//         inputPassword.setAttribute("type", "password");
-//         eyePass.setAttribute("class", "fa fa-eye")
-//     }
-// });
-
 userList = [
   {
     "name": "Caio Boris",

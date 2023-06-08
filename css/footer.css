@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 
 footer {
+  display: flex;
+  justify-content: space-between;
   background-color: #1ea672;
   color: #ffffff;
   padding: 20px;
@@ -9,4 +11,10 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+@media(max-width: 800px) {
+  footer{
+    flex-direction: column;
+  }
 }

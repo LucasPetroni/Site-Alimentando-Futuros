@@ -92,7 +92,7 @@ h1 {
 @media (max-width: 992px) {
   .main-container {
     padding: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 
   h1 {
@@ -111,12 +111,17 @@ h1 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 790px) {
   .formulario input[type="text"],
   .formulario input[type="email"],
   .formulario input[type="tel"] {
     width: 100%;
     padding: 8px;
+  }
+
+  .main-container {
+    padding: 10px;
+    padding-bottom: 150px;
   }
 }
 
@@ -130,6 +135,6 @@ h1 {
 
   .main-container {
     padding: 10px;
-    padding-bottom: 70px;
+    padding-bottom: 150px;
   }
 }
